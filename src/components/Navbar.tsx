@@ -23,7 +23,7 @@ export function Navbar(props: navbarprops): JSX.Element {
 
   return (
     
-    <div className="bg-lime-400  flex justify-between md:bg-slate-50 md:grid grid-cols-1 p-2 gap-5 md:w-16 md:h-full md:rounded-xl">
+    <div className="bg-lime-400  flex justify-between md:bg-teal-950 md:opacity-75 md:grid grid-cols-1 p-2 gap-5 md:w-14 md:h-full md:rounded-xl">
       
       <div className=" flex md:grid grid-cols-1 justify-center items-start ">
         <div className="bg-slate-950 p-2 flex items-center justify-center rounded-xl">
