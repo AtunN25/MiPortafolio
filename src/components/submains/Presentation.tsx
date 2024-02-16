@@ -146,85 +146,129 @@ export function Presentation() {
         </div>
         {/*DIV TOOLS*/}
         <div className=" h-3/6 p-2">
-          <div className="bg-neutral-800 border-2 border-cyan-300 opacity-75 h-full rounded-lg">
-            <div className="bg-orange-300 h-1/8">
+          <div className="bg-neutral-800 border-2 border-cyan-300 opacity-75 h-full rounded-lg gap-2 p-2">
+            <div className="bg-orange-300 h-6">
               <h1 className="text-white">Tools and lenguages:</h1>
             </div>
-            <div className="bg-lime-400 grid grid-cols-6 p-2 gap-2 ">
-              {/*<div className="bg-slate-500 ">
-                  <img className="" src="/src/assets/css.png" alt="Logo"></img>
-                </div>*/}
+            <div className="bg-lime-400 p-2 flex-1 overflow-auto">
+              <div className=" bg-red-400 grid grid-cols-6 p-2 gap-2">
+                
+                <div className="bg-slate-700 flex items-center justify-center rounded-md h-20 p-2">
+                  <img
+                    className="h-18 w-16"
+                    src="/src/assets/html-5.png"
+                    alt="Logo"
+                  ></img>
+                </div>
 
-              <div className="bg-slate-700 h-1/2">
-                <img className="" src="/src/assets/html-5.png" alt="Logo"></img>
-              </div>
+                <div className="bg-slate-700 flex items-center justify-center rounded-md h-20 p-2">
+                  <img
+                    className="h-18 w-16"
+                    src="/src/assets/html-5.png"
+                    alt="Logo"
+                  ></img>
+                </div>
 
-              <div className="bg-slate-700 h-1/2">
-                <img className="" src="/src/assets/css.png" alt="Logo"></img>
-              </div>
 
-              <div className="bg-slate-700 h-1/2">
-                <img className="" src="/src/assets/js.png" alt="Logo"></img>
-              </div>
+                <div className="bg-slate-700 flex items-center justify-center rounded-md h-20 p-2">
+                  <img
+                    className="h-18 w-16"
+                    src="/src/assets/html-5.png"
+                    alt="Logo"
+                  ></img>
+                </div>
 
-              <div className="bg-slate-700 h-1/2">
-                <img
-                  className=""
-                  src="/src/assets/tailwind-css.svg"
-                  alt="Logo"
-                ></img>
-              </div>
+                <div className="bg-slate-700 flex items-center justify-center rounded-md h-20 p-2">
+                  <img
+                    className="h-18 w-16"
+                    src="/src/assets/html-5.png"
+                    alt="Logo"
+                  ></img>
+                </div>
+                <div className="bg-slate-700 flex items-center justify-center rounded-md h-20 p-2">
+                  <img
+                    className="h-18 w-16"
+                    src="/src/assets/html-5.png"
+                    alt="Logo"
+                  ></img>
+                </div>
+                <div className="bg-slate-700 flex items-center justify-center rounded-md h-20 p-2">
+                  <img
+                    className="h-18 w-16"
+                    src="/src/assets/html-5.png"
+                    alt="Logo"
+                  ></img>
+                </div>
+                <div className="bg-slate-700 flex items-center justify-center rounded-md h-20 p-2">
+                  <img
+                    className="h-18 w-16"
+                    src="/src/assets/html-5.png"
+                    alt="Logo"
+                  ></img>
+                </div>
+                <div className="bg-slate-700 flex items-center justify-center rounded-md h-20 p-2">
+                  <img
+                    className="h-18 w-16"
+                    src="/src/assets/html-5.png"
+                    alt="Logo"
+                  ></img>
+                </div>
+                <div className="bg-slate-700 flex items-center justify-center rounded-md h-20 p-2">
+                  <img
+                    className="h-18 w-16"
+                    src="/src/assets/html-5.png"
+                    alt="Logo"
+                  ></img>
+                </div>
+                <div className="bg-slate-700 flex items-center justify-center rounded-md h-20 p-2">
+                  <img
+                    className="h-18 w-16"
+                    src="/src/assets/html-5.png"
+                    alt="Logo"
+                  ></img>
+                </div>
+                <div className="bg-slate-700 flex items-center justify-center rounded-md h-20 p-2">
+                  <img
+                    className="h-18 w-16"
+                    src="/src/assets/html-5.png"
+                    alt="Logo"
+                  ></img>
+                </div>
 
-              <div className="bg-slate-700 h-1/2">
-                <img
-                  className=""
-                  src="/src/assets/servidor-sql.png"
-                  alt="Logo"
-                ></img>
-              </div>
+                <div className="bg-slate-700 flex items-center justify-center rounded-md h-20 p-2">
+                  <img
+                    className="h-18 w-16"
+                    src="/src/assets/html-5.png"
+                    alt="Logo"
+                  ></img>
+                </div>
+                <div className="bg-slate-700 flex items-center justify-center rounded-md h-20 p-2">
+                  <img
+                    className="h-18 w-16"
+                    src="/src/assets/html-5.png"
+                    alt="Logo"
+                  ></img>
+                </div>
+                <div className="bg-slate-700 flex items-center justify-center rounded-md h-20 p-2">
+                  <img
+                    className="h-18 w-16"
+                    src="/src/assets/html-5.png"
+                    alt="Logo"
+                  ></img>
+                </div>
+                <div className="bg-slate-700 flex items-center justify-center rounded-md h-20 p-2">
+                  <img
+                    className="h-18 w-16"
+                    src="/src/assets/html-5.png"
+                    alt="Logo"
+                  ></img>
+                </div>
 
-              <div className="bg-slate-700 h-1/2">
-                <img className="" src="/src/assets/git.png" alt="Logo"></img>
-              </div>
+                
 
-              <div className="bg-slate-700 h-1/2">
-                <img className="" src="/src/assets/php.png" alt="Logo"></img>
-              </div>
-
-              <div className="bg-slate-700 h-1/2">
-                <img className="" src="/src/assets/c++.png" alt="Logo"></img>
-              </div>
-
-              <div className="bg-slate-700 h-1/2">
-                <img className="" src="/src/assets/react.png" alt="Logo"></img>
-              </div>
-
-              <div className="bg-slate-700 h-1/2">
-                <img
-                  className=""
-                  src="/src/assets/Vitejs-logo.svg.png"
-                  alt="Logo"
-                ></img>
-              </div>
-
-              <div className="bg-slate-700 h-1/2">
-                <img
-                  className=""
-                  src="/src/assets/typescript.png"
-                  alt="Logo"
-                ></img>
-              </div>
-
-              <div className="bg-slate-700 h-1/2">
-                <img
-                  className=""
-                  src="/src/assets/linux.png"
-                  alt="Logo"
-                ></img>
+                
               </div>
             </div>
-
-            <div></div>
           </div>
         </div>
       </div>
