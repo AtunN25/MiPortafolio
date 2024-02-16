@@ -48,7 +48,7 @@ export function Presentation() {
         <div className=" h-3/6 p-2">
           <div className="bg-neutral-800 border-2 border-cyan-300 opacity-75 h-full rounded-lg p-3">
             <div>
-              <table className="text-white bg-gray-900 p-5 rounded-md">
+              <table className="text-white  p-5 rounded-md">
                 <thead>
                   <tr>
                     <th className="w-8"></th>
@@ -168,11 +168,19 @@ export function Presentation() {
               </div>
 
               <div className="bg-slate-700 h-1/2">
-                <img className="" src="/src/assets/tailwind-css.svg" alt="Logo"></img>
+                <img
+                  className=""
+                  src="/src/assets/tailwind-css.svg"
+                  alt="Logo"
+                ></img>
               </div>
 
               <div className="bg-slate-700 h-1/2">
-                <img className="" src="/src/assets/servidor-sql.png" alt="Logo"></img>
+                <img
+                  className=""
+                  src="/src/assets/servidor-sql.png"
+                  alt="Logo"
+                ></img>
               </div>
 
               <div className="bg-slate-700 h-1/2">
@@ -192,11 +200,27 @@ export function Presentation() {
               </div>
 
               <div className="bg-slate-700 h-1/2">
-                <img className="" src="/src/assets/Vitejs-logo.svg.png" alt="Logo"></img>
+                <img
+                  className=""
+                  src="/src/assets/Vitejs-logo.svg.png"
+                  alt="Logo"
+                ></img>
               </div>
 
               <div className="bg-slate-700 h-1/2">
-                <img className="" src="/src/assets/typescript.png" alt="Logo"></img>
+                <img
+                  className=""
+                  src="/src/assets/typescript.png"
+                  alt="Logo"
+                ></img>
+              </div>
+
+              <div className="bg-slate-700 h-1/2">
+                <img
+                  className=""
+                  src="/src/assets/linux.png"
+                  alt="Logo"
+                ></img>
               </div>
             </div>
 

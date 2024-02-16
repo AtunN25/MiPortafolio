@@ -67,9 +67,11 @@ export function Navbar(props: navbarprops): JSX.Element {
 
       <div className="flex  md:grid grid-cols-1 justify-center items-end ">
         <div className="bg-slate-950 p-2 flex items-center justify-center rounded-xl">
-          <button className="transform transition-transform hover:scale-150" >
-            <Icon path={mdiGithub} size={Size} color="white" />
-          </button>
+          
+
+          <a className="transform transition-transform hover:scale-150" href="https://github.com/AtunN25" target="_blank" rel="noopener noreferrer">
+          <Icon path={mdiGithub} size={Size} color="white" />
+         </a>
         </div>
       </div>
     </div>
