@@ -4,7 +4,7 @@ import {
   mdiContacts,
   mdiFolderPound,
   mdiAccount,
-  mdiGithub,
+  mdiWhatsapp,
 } from "@mdi/js";
 
 interface navbarprops {
@@ -67,11 +67,15 @@ export function Navbar(props: navbarprops): JSX.Element {
 
       <div className="flex  md:grid grid-cols-1 justify-center items-end ">
         <div className="bg-slate-950 p-2 flex items-center justify-center rounded-xl">
-          
-
-          <a className="transform transition-transform hover:scale-150" href="https://github.com/AtunN25" target="_blank" rel="noopener noreferrer">
-          <Icon path={mdiGithub} size={Size} color="white" />
-         </a>
+          <a
+            className="transform transition-transform hover:scale-150"
+            href="
+            https://wa.link/vtqooi"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon path={mdiWhatsapp} size={Size} color="white" />
+          </a>
         </div>
       </div>
     </div>
