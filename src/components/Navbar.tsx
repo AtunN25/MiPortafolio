@@ -35,7 +35,7 @@ export function Navbar(props: navbarprops): JSX.Element {
             className="transform transition-transform hover:scale-150"
             name="btnPresentation"
             onClick={() => {
-              returnAtFather("Presentation");
+              returnAtFather("PRESENTACION");
             }}
           >
             <Icon path={mdiHome} size={Size} color="white" />
@@ -46,7 +46,7 @@ export function Navbar(props: navbarprops): JSX.Element {
             className="transform transition-transform hover:scale-150"
             name="btnFolder"
             onClick={() => {
-              returnAtFather("Proyects");
+              returnAtFather("PROYECTOS");
             }}
           >
             <Icon path={mdiFolderPound} size={Size} color="white" />
@@ -57,7 +57,7 @@ export function Navbar(props: navbarprops): JSX.Element {
             className="transform transition-transform hover:scale-150"
             name="btnContact"
             onClick={() => {
-              returnAtFather("Contactme");
+              returnAtFather("CONTACTAME");
             }}
           >
             <Icon path={mdiContacts} size={Size} color="white" />

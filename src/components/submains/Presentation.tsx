@@ -3,10 +3,10 @@ import { mdiGithub, mdiFilePdfBox } from "@mdi/js";
 
 export function Presentation() {
   return (
-    <div className="pt-14 md:pt-0  grid grid-cols-2 gap-1 p-1 h-full">
+    <div className="  pt-14 md:pt-0  md:grid grid-cols-2 gap-1 p-1 md:h-full">
       <div className=" col-span-1 ">
         {/*ME*/}
-        <div className=" h-2/5 p-2 pl-0">
+        <div className=" h-2/5 p-2 pl-0 ">
           <div className="bg-neutral-800 border-2 border-cyan-300 opacity-75 h-full rounded-lg grid grid-cols-10 p-2 gap-2">
             <div className="col-span-6 p-3 text-white">
               <div >
