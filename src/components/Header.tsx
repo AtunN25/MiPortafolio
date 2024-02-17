@@ -19,7 +19,7 @@ export function Header(props: {namePageHeader: string}) {
 
       <div className=" md:bg-indigo-950 md:opacity-75 md:border-2 md:border-indigo-400 px-2 py-0.5 w-16 rounded-lg">
         <div className="bg-gray-950 flex  justify-center rounded-lg">
-          <Icon path={mdiVectorSquareMinus} size={0.8} color="white"/>
+          {/*<Icon path={mdiVectorSquareMinus} size={0.8} color="white"/>*/}
         </div>
       </div>
     </div>
