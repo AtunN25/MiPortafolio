@@ -1,0 +1,19 @@
+import "../../../index.css";
+
+
+
+export function Subtema(props: {subnamePageHeader: string}) {
+  return (
+    <div className="rounded-t-lg  bg-cyan-800 flex h-6 justify-between ">
+
+      <div>
+        <h1 className="text-white px-2">{props.subnamePageHeader}:</h1>
+      </div>
+      <div className="flex items-center gap-1 pr-2">
+        <div className="w-4 h-4 rounded-full circle1" />
+        <div className="w-4 h-4 rounded-full circle2" />
+        <div className="w-4 h-4 rounded-full circle3" />
+      </div>
+    </div>
+  );
+}

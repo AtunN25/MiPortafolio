@@ -1,8 +1,6 @@
 import "../index.css";
 //import {SubNavbar} from './subNavbar'
 
-import Icon from '@mdi/react';
-import { mdiVectorSquareMinus } from '@mdi/js';
 
 
 export function Header(props: {namePageHeader: string}) {

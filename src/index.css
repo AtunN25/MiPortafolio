@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.jetbrains-mono {
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 400; /* O ajusta el peso según sea necesario */
+    font-style: normal;
+  }
+
+/* Define una clase con los colores de los círculos */
+.divcircle {
+    /* Establece los colores de los círculos */
+    --circle-color-1: rgb(184, 178, 178);
+    --circle-color-2: rgb(184, 178, 178);
+    --circle-color-3: rgb(184, 178, 178);
+}
+
+/* Cambia los colores de los círculos cuando el mouse pasa sobre el div padre */
+.divcircle:hover {
+    /* Cambia los colores de los círculos al pasar el mouse */
+    --circle-color-1: rgb(63, 228, 63);
+    --circle-color-2: yellow;
+    --circle-color-3: red;
+}
+
+/* Aplica los colores a los círculos */
+.divcircle .circle1 {
+    background-color: var(--circle-color-1);
+}
+
+.divcircle .circle2 {
+    background-color: var(--circle-color-2);
+}
+
+.divcircle .circle3 {
+    background-color: var(--circle-color-3);
+}

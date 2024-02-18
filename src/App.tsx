@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useMediaQuery } from "@react-hook/media-query";
 
 import "./App.css";
@@ -11,20 +11,27 @@ import { Presentation } from "./components/submains/Presentation.tsx";
 import { Proyects } from "./components/submains/Proyect.tsx";
 import { Contactme } from "./components/submains/Contactme.tsx";
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 function App() {
+  const notify = () => toast("🙂Hi! Usa los iconos del panel izquierdo para moverte por las secciones");
+
+  useEffect(() => {
+    notify();
+  }, []);
 
   const [nowpage, setnowpage] = useState("PRESENTACION");
   const isMobileOrTablet = useMediaQuery("(max-width: 768px)");
 
   return (
-    <div className="h-screen  w-full  flex ">
+    <div className="h-screen  w-full  flex jetbrains-mono">
+      <ToastContainer toastStyle={{  backgroundColor: 'green', 
+      color: 'white' }} />
       {isMobileOrTablet ? (
         //responsive para tablet o celular
         <div className="bg-orange-400 w-full grid grid-cols-12 md:p-3">
-
           <div className="bg-slate-300 md:p-2 col-span-12 flex flex-col  h-full ">
-            
-
             <div className="bg-gray-800 p-2 flex-1 overflow-y-auto ">
               <Presentation />
               <Proyects />
@@ -40,7 +47,6 @@ function App() {
                 }}
               ></Navbar>
             </div>
-
           </div>
         </div>
       ) : (
