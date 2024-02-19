@@ -19,7 +19,7 @@ import typescript from '../../assets/typescript.png'
 import tailwindcss from '../../assets/tailwind-css.svg'
 import Vitejslogo from '../../assets/Vitejs-logo.svg.png'
 import git from '../../assets/git.png'
-import micv from '../../assets/CV_Frank_Chaparro.pdf'
+import micv from '../../assets/cv_con_link.pdf'
 
 export function Presentation() {
   return (
