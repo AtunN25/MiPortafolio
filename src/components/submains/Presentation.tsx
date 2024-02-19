@@ -3,6 +3,24 @@ import { mdiGithub, mdiFilePdfBox } from "@mdi/js";
 import "../../index.css";
 import { Subtema } from "./subparts/Subtema.tsx";
 
+import mifoto from '../../assets/mifoto.jpg'
+
+import html5 from '../../assets/html-5.png'
+import css from '../../assets/css.png'
+import js from '../../assets/js.png'
+import phplogo from '../../assets/php.png'
+import cmas from '../../assets/c++.png'
+import linux from '../../assets/linux.png'
+import figma from '../../assets/figma.png'
+import microsoftoffice from '../../assets/microsoft-office.png'
+import react from '../../assets/react.svg'
+import servidorsql from '../../assets/servidor-sql.png'
+import typescript from '../../assets/typescript.png'
+import tailwindcss from '../../assets/tailwind-css.svg'
+import Vitejslogo from '../../assets/Vitejs-logo.svg.png'
+import git from '../../assets/git.png'
+import micv from '../../assets/CV_Frank_Chaparro.pdf'
+
 export function Presentation() {
   return (
     <div className=" pt-12 md:pt-0  md:grid grid-cols-2 gap-1 p-1 md:h-full ">
@@ -28,7 +46,7 @@ export function Presentation() {
                 <div className=" flex gap-2 md:gap-4 ">
                   <a
                     className="flex items-center bg-transparent hover:bg-cyan-600 text-cyan-300 font-semibold hover:text-white  px-4 border border-cyan-300 hover:border-transparent rounded"
-                    href="/src/assets/CV Frank Chaparro.pdf"
+                    href={micv}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -48,7 +66,7 @@ export function Presentation() {
               <div className=" rounded-lg bg-slate-50 col-span-4 p-2 h-auto flex items-center justify-center">
                 <img
                   className="w-48 h-48 flex rounded-lg"
-                  src="/src/assets/mifoto.jpg"
+                  src={mifoto}
                   alt="Logo"
                 ></img>
               </div>
@@ -217,7 +235,7 @@ export function Presentation() {
                 <div className="bg-slate-300 flex items-center justify-center rounded-md h-20 p-2 hover:scale-110">
                   <img
                     className="h-18 w-16 "
-                    src="/src/assets/html-5.png"
+                    src={html5}
                     alt="Logo"
                   ></img>
                 </div>
@@ -225,7 +243,7 @@ export function Presentation() {
                 <div className="bg-slate-300 flex items-center justify-center rounded-md h-20 p-2 hover:scale-110">
                   <img
                     className="h-18 w-16 "
-                    src="/src/assets/css.png"
+                    src={css}
                     alt="Logo"
                   ></img>
                 </div>
@@ -233,7 +251,7 @@ export function Presentation() {
                 <div className="bg-slate-300 flex items-center justify-center rounded-md h-20 p-2 hover:scale-110">
                   <img
                     className="h-18 w-16 "
-                    src="/src/assets/js.png"
+                    src={js}
                     alt="Logo"
                   ></img>
                 </div>
@@ -241,56 +259,56 @@ export function Presentation() {
                 <div className="bg-slate-300 flex items-center justify-center rounded-md h-20 p-2 hover:scale-110">
                   <img
                     className="h-18 w-16 "
-                    src="/src/assets/php.png"
+                    src={phplogo}
                     alt="Logo"
                   ></img>
                 </div>
                 <div className="bg-slate-300 flex items-center justify-center rounded-md h-20 p-2 hover:scale-110">
                   <img
                     className="h-18 w-16 "
-                    src="/src/assets/react.svg"
+                    src={react}
                     alt="Logo"
                   ></img>
                 </div>
                 <div className="bg-slate-300 flex items-center justify-center rounded-md h-20 p-2 hover:scale-110">
                   <img
                     className="h-18 w-16 "
-                    src="/src/assets/servidor-sql.png"
+                    src={servidorsql}
                     alt="Logo"
                   ></img>
                 </div>
                 <div className="bg-slate-300 flex items-center justify-center rounded-md h-20 p-2 hover:scale-110">
                   <img
                     className="h-18 w-16 "
-                    src="/src/assets/typescript.png"
+                    src={typescript}
                     alt="Logo"
                   ></img>
                 </div>
                 <div className="bg-slate-300 flex items-center justify-center rounded-md h-20 p-2 hover:scale-110">
                   <img
                     className="h-18 w-16 "
-                    src="/src/assets/linux.png"
+                    src={linux}
                     alt="Logo"
                   ></img>
                 </div>
                 <div className="bg-slate-300 flex items-center justify-center rounded-md h-20 p-2 hover:scale-110">
                   <img
                     className="h-18 w-16 "
-                    src="/src/assets/git.png"
+                    src={git}
                     alt="Logo"
                   ></img>
                 </div>
                 <div className="bg-slate-300 flex items-center justify-center rounded-md h-20 p-2 hover:scale-110">
                   <img
                     className="h-18 w-16 "
-                    src="/src/assets/figma.png"
+                    src={figma}
                     alt="Logo"
                   ></img>
                 </div>
                 <div className="bg-slate-300 flex items-center justify-center rounded-md h-20 p-2 hover:scale-110">
                   <img
                     className="h-18 w-16 "
-                    src="/src/assets/c++.png"
+                    src={cmas}
                     alt="Logo"
                   ></img>
                 </div>
@@ -298,21 +316,21 @@ export function Presentation() {
                 <div className="bg-slate-300 flex items-center justify-center rounded-md h-20 p-2 hover:scale-110">
                   <img
                     className="h-18 w-16 "
-                    src="/src/assets/microsoft-office.png"
+                    src={microsoftoffice}
                     alt="Logo"
                   ></img>
                 </div>
                 <div className="bg-slate-300 flex items-center justify-center rounded-md h-20 p-2 hover:scale-110">
                   <img
                     className="h-18 w-16 "
-                    src="/src/assets/tailwind-css.svg"
+                    src={tailwindcss}
                     alt="Logo"
                   ></img>
                 </div>
                 <div className="bg-slate-300 flex items-center justify-center rounded-md h-20 p-2 hover:scale-110">
                   <img
                     className="h-18 w-16 "
-                    src="/src/assets/Vitejs-logo.svg.png"
+                    src={Vitejslogo}
                     alt="Logo"
                   ></img>
                 </div>

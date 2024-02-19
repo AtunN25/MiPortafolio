@@ -3,10 +3,11 @@ import {
   mdiHome,
   mdiContacts,
   mdiFolderPound,
-  mdiAccount,
   mdiWhatsapp,
   mdiLinkedin,
 } from "@mdi/js";
+
+import logosinsubtitulo from "../assets/logoChaparroSinSubtitulo.png";
 
 interface navbarprops {
   page: string;
@@ -29,7 +30,7 @@ export function Navbar(props: navbarprops): JSX.Element {
         <div className="bg-slate-950  md:flex items-center md:justify-center rounded-xl ">
           <img
             className="w-9 "
-            src="/src/assets/logoChaparro.png"
+            src={logosinsubtitulo}
             alt="Logo"
           ></img>
         </div>

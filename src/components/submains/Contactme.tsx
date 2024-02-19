@@ -1,6 +1,9 @@
 import "../../index.css";
 import { Subtema } from "./subparts/Subtema.tsx";
 
+import Vitejslogo from '../../assets/Vitejs-logo.svg.png'
+import react from '../../assets/react.svg'
+
 export function Contactme() {
   return (
     <div className="pt-2  md:grid grid-cols-2 gap-5 p-1 md:h-full pb-3">
@@ -95,7 +98,7 @@ export function Contactme() {
             rel="noopener noreferrer"> figma</a> con mas efectos.
           </p>
           <h1 className="px-2"> Este proyecto esta siendo creado con :</h1>
-          <div className="px-2 flex">
+          <div className="px-2 flex items-end justify-end">
             <img
               width="48"
               height="48"
@@ -122,12 +125,12 @@ export function Contactme() {
             />
             <img
               className="h-11 w-11 "
-              src="/src/assets/Vitejs-logo.svg.png"
+              src={Vitejslogo}
               alt="Logo"
             ></img>
             <img
               className="h-11 w-11 "
-              src="/src/assets/react.svg"
+              src={react}
               alt="Logo"
             ></img>
             <span className="flex justify-end w-full p-4">v 1.0.0</span>

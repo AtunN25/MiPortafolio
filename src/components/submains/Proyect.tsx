@@ -2,6 +2,9 @@ import "../../index.css";
 import { Subtema } from "./subparts/Subtema.tsx";
 import { SubProyect } from "./subparts/SubProyect.tsx";
 
+import estructuradeDatos from '../../assets/imageproyects/Estructuradedatos.png'
+import proyectoIO from '../../assets/imageproyects/proyectIO.png'
+
 export function Proyects() {
   return (
     <div className="pt-3 md:pt-2  md:grid grid-cols-2 p-1 gap-5 md:h-full pb-3 text-white ">
@@ -12,7 +15,7 @@ export function Proyects() {
         <div className=" grid grid-cols-3 p-3 gap-2">
           {/*PROYECTOS*/}
           <SubProyect
-            urlimage={"/src/assets/imageproyects/proyectIO.PNG"}
+            urlimage={proyectoIO}
             nameproyect={"Teoria de Decisiones"}
             description={"Simulador del Tema de teoria de deciones bajo certidumbre en una pagina web , para el curso de Investigacion Operativa"}
             arrayurlicons={["https://img.icons8.com/color/48/html-5--v1.png","https://img.icons8.com/color/48/tailwindcss.png","https://img.icons8.com/color/48/javascript--v1.png"]
@@ -30,7 +33,7 @@ export function Proyects() {
         <div className=" grid grid-cols-3 p-3 gap-2">
           {/*TAREAS*/}
           <SubProyect
-            urlimage={"/src/assets/imageproyects/Estructuradedatos.PNG"}
+            urlimage={estructuradeDatos}
             nameproyect={"Nodos y Referencias"}
             description={"Trabajo grupal para el curso de Estructura de Datos usando nodos y referencias,simulando punteros.1"}
             arrayurlicons={["https://img.icons8.com/color/48/html-5--v1.png","https://img.icons8.com/color/48/css3.png","https://img.icons8.com/color/48/javascript--v1.png"]
