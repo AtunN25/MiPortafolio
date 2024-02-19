@@ -30,9 +30,9 @@ function App() {
       color: 'white' }} />
       {isMobileOrTablet ? (
         //responsive para tablet o celular
-        <div className="bg-orange-400 w-full grid grid-cols-12 md:p-3">
-          <div className="bg-slate-300 md:p-2 col-span-12 flex flex-col  h-full ">
-            <div className="bg-gray-800 p-2 flex-1 overflow-y-auto ">
+        <div className="w-full grid grid-cols-12 md:p-3">
+          <div className=" md:p-2 col-span-12 flex flex-col  h-full ">
+            <div className=" p-2 flex-1 overflow-y-auto ">
               <Presentation />
               <Proyects />
               <Contactme />
@@ -52,7 +52,7 @@ function App() {
       ) : (
         //tamaño normal de escritorio
         <div className=" w-full grid grid-cols-12 p-3">
-          <div className=" h-full px-6 py-3 col-span-1  ">
+          <div className=" h-full px-6 py-2 col-span-1  ">
             <Navbar
               page={"hola soy main tu papa"}
               clickreturnpage={(namepage) => {

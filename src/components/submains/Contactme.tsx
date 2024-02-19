@@ -3,9 +3,9 @@ import { Subtema } from "./subparts/Subtema.tsx";
 
 export function Contactme() {
   return (
-    <div className="pt-2   md:grid grid-cols-2 gap-5 p-1 md:h-full pb-3">
+    <div className="pt-2  md:grid grid-cols-2 gap-5 p-1 md:h-full pb-3">
       <div className="bg-neutral-800 border-2 border-cyan-300  md:h-full rounded-lg divcircle hover:border-cyan-100 hover:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f]">
-        <Subtema subnamePageHeader={"LOCALIZACION:"} />
+        <Subtema subnamePageHeader={"LOCALIZACION"} />
         <div className="relative h-[620px] rounded-lg shadow-lg r dark:shadow-black/20 flex justify-center items-center p-3 ">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15178.275423829606!2d-70.24252501103089!3d-17.998785028566807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915ac59e303c5e97%3A0x68da2cd60620089!2sDistrito%20de%20Pocollay%2C%20Tacna!5e0!3m2!1ses-419!2spe!4v1693185595511!5m2!1ses-419!2spe"
@@ -16,10 +16,9 @@ export function Contactme() {
         </div>
       </div>
 
-      <div className="pt-4 md:pt-0 col-span-1 flex flex-col gap-3">
-        
+      <div className="pt-4 md:pt-0 col-span-1 flex flex-col gap-2">
         <div className="bg-neutral-800 border-2 border-cyan-300 opacity-85 rounded-lg h-4/6 mb-2 divcircle hover:border-cyan-100 hover:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f]">
-        <Subtema subnamePageHeader={"ENVIAME UN MENSAJE"} />
+          <Subtema subnamePageHeader={"ENVIAME UN MENSAJE"} />
           <form className="px-8 pt-6 pb-8 mb-4 rounded">
             <div className="mb-4 grid grid-cols-2">
               <div className="mb-4 md:mr-2 md:mb-0">
@@ -77,9 +76,9 @@ export function Contactme() {
                 placeholder="Mensaje"
               ></textarea>
             </div>
-            <div className="">
+            <div>
               <button
-                className="w-52 px-4 py-2 font-bold text-white bg-cyan-300 rounded-md hover:bg-cyan-500 dark:bg-cyan-800 dark:text-white  focus:outline-none focus:shadow-outline"
+                className="flex items-center bg-transparent hover:bg-cyan-600 text-cyan-300 font-semibold hover:text-white py-2 px-4 border border-cyan-300 hover:border-transparent rounded"
                 type="button"
               >
                 Enviar Mensaje
@@ -89,9 +88,51 @@ export function Contactme() {
         </div>
         <div className=" text-white bg-neutral-800 border-2 border-cyan-300 opacity-85 rounded-lg h-2/6 divcircle hover:border-cyan-100 hover:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f]">
           <Subtema subnamePageHeader={"SECCION SIN MOTIVO O POR AÑADIR"} />
+
+          <p className="px-2">
+            Es la primera version de mi portafolio y la seguire mejorando de
+            acuerdo al diseño en  <a href="https://www.figma.com/file/1j68kU3Ox7tddEv9iFfKPL/Free-Template-Portfolio-Web-Site-(Community)?type=design&node-id=1%3A2&mode=dev&t=efqv3q83bbzg2vn8-1" className="text-teal-400 " target="_blank"
+            rel="noopener noreferrer"> figma</a> con mas efectos.
+          </p>
+          <h1 className="px-2"> Este proyecto esta siendo creado con :</h1>
+          <div className="px-2 flex">
+            <img
+              width="48"
+              height="48"
+              src="https://img.icons8.com/color/48/html-5--v1.png"
+              alt="html-5--v1"
+            />
+            <img
+              width="48"
+              height="48"
+              src="https://img.icons8.com/color/48/css3.png"
+              alt="css3"
+            />
+            <img
+              width="48"
+              height="48"
+              src="https://img.icons8.com/fluency/48/typescript--v1.png"
+              alt="typescript--v1"
+            />
+            <img
+              width="48"
+              height="48"
+              src="https://img.icons8.com/color/48/tailwindcss.png"
+              alt="tailwindcss"
+            />
+            <img
+              className="h-11 w-11 "
+              src="/src/assets/Vitejs-logo.svg.png"
+              alt="Logo"
+            ></img>
+            <img
+              className="h-11 w-11 "
+              src="/src/assets/react.svg"
+              alt="Logo"
+            ></img>
+            <span className="flex justify-end w-full p-4">v 1.0.0</span>
+          </div>
           
-          <p className="px-2">Es la primera version de mi portafolio y la seguire mejorando de
-          acuerdo al diseño en figma con mas efectos.</p>
         </div>
       </div>
     </div>

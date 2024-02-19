@@ -5,6 +5,7 @@ import {
   mdiFolderPound,
   mdiAccount,
   mdiWhatsapp,
+  mdiLinkedin,
 } from "@mdi/js";
 
 interface navbarprops {
@@ -21,16 +22,20 @@ export function Navbar(props: navbarprops): JSX.Element {
     props.clickreturnpage(nameofdiv);
   };
 
-
   return (
     <div className="bg-lime-600 opacity-90 flex justify-between md:bg-teal-950 md:border-2 md:border-emerald-500 md:opacity-85 md:grid grid-cols-1 p-2 gap-5 md:w-14 md:h-full md:rounded-xl ">
+      
       <div className=" flex md:grid grid-cols-1 justify-center items-start ">
-        <div className="bg-slate-950 p-2 flex items-center justify-center rounded-xl">
-          <Icon path={mdiAccount} size={Size} color="white" />
+        <div className="bg-slate-950  md:flex items-center md:justify-center rounded-xl ">
+          <img
+            className="w-9 "
+            src="/src/assets/logoChaparro.png"
+            alt="Logo"
+          ></img>
         </div>
       </div>
 
-      <div className="  flex gap-2 md:grid grid-cols-1 items-center">
+      <div className=" flex gap-3  md:grid grid-cols-1 items-center ">
         <div className="bg-slate-950 p-2 flex items-center justify-center rounded-xl">
           <button
             className="transform transition-transform hover:scale-150"
@@ -66,8 +71,18 @@ export function Navbar(props: navbarprops): JSX.Element {
         </div>
       </div>
 
-      <div className="flex  md:grid grid-cols-1 justify-center items-end ">
+      <div className=" flex md:flex-col items-end gap-3 h-full justify-end">
         <div className="bg-slate-950 p-2 flex items-center justify-center rounded-xl">
+          <a
+            className="transform transition-transform hover:scale-150"
+            href="https://www.linkedin.com/in/frank-chaparro-0b883428a/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon path={mdiLinkedin} size={Size} color="white" />
+          </a>
+        </div>
+        <div className="bg-slate-950 p-2 flex items-center justify-center rounded-xl ">
           <a
             className="transform transition-transform hover:scale-150"
             href="
