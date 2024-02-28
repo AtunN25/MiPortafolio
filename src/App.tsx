@@ -15,10 +15,13 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function App() {
-  const notify = () => toast("🙂Hi! Usa los iconos del panel izquierdo para moverte por las secciones");
+  const notify = () => toast("🙂Hi! Usa los iconos del panel izquierdo para moverte por las secciones si estas en PC");
+
+  const notify2 = () => toast("Presiona los recuadros si estas en celular para ver el efecto🙂");
 
   useEffect(() => {
     notify();
+    notify2();
   }, []);
 
   const [nowpage, setnowpage] = useState("PRESENTACION");

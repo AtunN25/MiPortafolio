@@ -81,8 +81,8 @@ export function Presentation() {
             <br></br>
             <div className="pl-2 text-sm">
               <p>
-                Soy Frank, un estudiante <span className="text-cyan-400">apasionado del desarrollo software</span> de ,
-                donde cada <span className="text-cyan-400">obstáculo es una oportunidad para crecer y aprender.</span>
+                Soy Frank, un estudiante <span className="text-cyan-400">apasionado del desarrollo software</span> 
+                , donde cada <span className="text-cyan-400">obstáculo es una oportunidad para crecer y aprender.</span>
                 En este emocionante mundo de la programación, nuestras ideas
                 pueden cobrar vida con dedicación y esfuerzo. <span className="text-cyan-400">Con constancia y
                 determinación, el éxito está al alcance </span> de aquellos que se
@@ -114,7 +114,7 @@ export function Presentation() {
                 <br></br>
                 <ul className="pl-7 list-disc italic text-sm">
                   <li>Conocimiento en SO linux</li>
-                  <li>Conomiento en metologias agiles</li>
+                  <li>Conocimiento en metologias agiles</li>
                   <li>Manejo de base de datos</li>
                   <li>Resolucion de problemas</li>
                 </ul>
