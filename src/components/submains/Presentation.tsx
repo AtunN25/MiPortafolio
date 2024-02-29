@@ -23,9 +23,7 @@ import micv from "../../assets/cv_con_link.pdf";
 
 ("use client");
 
-import Image from "./assets/fondo.jpg";
-
-import { CardContainer, CardItem } from "../ui/3d-card.tsx";
+import { CardContainer } from "../ui/3d-card.tsx";
 
 export function Presentation() {
   return (

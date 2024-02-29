@@ -5,7 +5,7 @@ import { SubProyect } from "./subparts/SubProyect.tsx";
 import estructuradeDatos from '../../assets/imageproyects/Estructuradedatos.png'
 import proyectoIO from '../../assets/imageproyects/proyectIO.png'
 
-import { CardContainer, CardItem } from "../ui/3d-card.tsx";
+import { CardContainer } from "../ui/3d-card.tsx";
 
 export function Proyects() {
   return (
