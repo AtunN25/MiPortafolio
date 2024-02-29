@@ -14,23 +14,55 @@ import { Contactme } from "./components/submains/Contactme.tsx";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+import { ClassValue, clsx } from "clsx";
+import { twMerge } from "tailwind-merge";
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
+
 function App() {
-  const notify = () => toast("🙂Hi! Usa los iconos del panel izquierdo para moverte por las secciones si estas en PC");
-
-  const notify2 = () => toast("Presiona los recuadros si estas en celular para ver el efecto🙂");
-
-  useEffect(() => {
-    notify();
-    notify2();
-  }, []);
+  
 
   const [nowpage, setnowpage] = useState("PRESENTACION");
   const isMobileOrTablet = useMediaQuery("(max-width: 768px)");
 
+  useEffect(() => {
+    // Notificación para dispositivos de escritorio
+    if (!isMobileOrTablet) {
+      toast('👋¡Usa el panel izquierdo para moverte!😄', {
+        position: "top-center",
+        autoClose: 5500,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark"
+        })
+    }else{
+      toast('👋¡Pulsa en los cuadros,para ver los efectos!😄', {
+        position: "top-center",
+        autoClose: 6000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark"
+        })
+    }
+  }, []);
+
+
   return (
     <div className="h-screen  w-full  flex jetbrains-mono">
-      <ToastContainer toastStyle={{  backgroundColor: 'green', 
-      color: 'white' }} />
+      <ToastContainer
+        position="top-center"
+        autoClose={8000}
+        closeOnClick
+        theme="dark"
+      />
       {isMobileOrTablet ? (
         //responsive para tablet o celular
         <div className="w-full grid grid-cols-12 md:p-3">

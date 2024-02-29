@@ -4,7 +4,7 @@ import "../../../index.css";
 
 export function Subtema(props: {subnamePageHeader: string}) {
   return (
-    <div className="rounded-t-lg  bg-cyan-800 flex h-6 justify-between ">
+    <div className="rounded-t-lg  bg-neutral-900 flex h-6 justify-between ">
 
       <div>
         <h1 className="text-white px-2">{props.subnamePageHeader}:</h1>

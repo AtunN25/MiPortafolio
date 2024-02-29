@@ -24,7 +24,7 @@ export function Navbar(props: navbarprops): JSX.Element {
   };
 
   return (
-    <div className="bg-lime-600 opacity-90 flex justify-between md:bg-teal-950 md:border-2 md:border-emerald-500 md:opacity-85 md:grid grid-cols-1 p-2 gap-5 md:w-14 md:h-full md:rounded-xl ">
+    <div className="bg-cyan-800 opacity-90 flex justify-between md:bg-teal-950 md:border-2 md:border-emerald-500 md:opacity-85 md:grid grid-cols-1 p-2 gap-5 md:w-14 md:h-full md:rounded-xl ">
       
       <div className=" flex md:grid grid-cols-1 justify-center items-start ">
         <div className="bg-slate-950  md:flex items-center md:justify-center rounded-xl ">
