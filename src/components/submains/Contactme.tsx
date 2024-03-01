@@ -1,7 +1,7 @@
 import "../../index.css";
 import { Subtema } from "./subparts/Subtema.tsx";
 
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 
 import Vitejslogo from "../../assets/Vitejs-logo.svg.png";
 import react from "../../assets/react.svg";
@@ -83,7 +83,7 @@ export function Contactme() {
             <div className="mb-4 grid grid-cols-2">
               <div className="mb-4 md:mr-2 md:mb-0">
                 <label
-                  className="block mb-2 text-sm font-bold text-gray-700 dark:text-white"
+                  className="block mb-2 text-sm font-bold text-white"
                   htmlFor="firstName"
                 >
                   Nombres
@@ -99,7 +99,7 @@ export function Contactme() {
               </div>
               <div className="md:ml-2">
                 <label
-                  className="block mb-2 text-sm font-bold text-gray-700 dark:text-white"
+                  className="block mb-2 text-sm font-bold text-white"
                   htmlFor="Last Name"
                 >
                   Apellidos
@@ -115,7 +115,7 @@ export function Contactme() {
             </div>
             <div className="mb-4">
               <label
-                className="block mb-2 text-sm font-bold text-gray-700 dark:text-white"
+                className="block mb-2 text-sm font-bold text-white"
                 htmlFor="email"
               >
                 Email
@@ -131,7 +131,7 @@ export function Contactme() {
             </div>
             <div className=" mb-4 ">
               <label
-                className="block mb-2 text-sm font-bold text-gray-700 dark:text-white"
+                className="block mb-2 text-sm font-bold text-white"
                 htmlFor="Mensaje"
               >
                 Mensaje

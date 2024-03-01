@@ -175,7 +175,7 @@ export function Presentation() {
                     <tr>
                       <td>2</td>
                       <td>
-                        <span className="text-lime-400 text-lg font-thin">
+                        <span className="text-lime-400 text-lg ">
                           &nbsp;&nbsp;&nbsp;&nbsp;"fullname":
                         </span>{" "}
                         <span className="text-violet-400 text-lg">
