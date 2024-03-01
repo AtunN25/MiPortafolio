@@ -1,12 +1,61 @@
 import "../../index.css";
 import { Subtema } from "./subparts/Subtema.tsx";
 
+import React, { useRef, useEffect } from "react";
+
 import Vitejslogo from "../../assets/Vitejs-logo.svg.png";
 import react from "../../assets/react.svg";
 
 import { CardContainer } from "../ui/3d-card.tsx";
 
+import emailjs from "@emailjs/browser";
+
+import "react-toastify/dist/ReactToastify.css";
+import {  toast } from "react-toastify";
+
 export function Contactme() {
+  
+  const form = useRef<HTMLFormElement>(null);
+
+  const sendEmail = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_i3rex9r", "template_oimzfz3", form.current!, {
+        publicKey: "GHnk-Bjt8CkRQ3Z20",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          toast.success("Mensaje enviado con exito😃", {
+            position: "top-center",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+          });
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+          toast.error("Error el enviar el mensaje😰", {
+            position: "top-center",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+          });
+        }
+      );
+
+    form.current!.reset();
+  };
+
   return (
     <div className="pt-2  md:grid grid-cols-2 gap-5 p-1 md:h-full pb-3">
       <CardContainer className="inter-var">
@@ -26,34 +75,41 @@ export function Contactme() {
       <div className="pt-4 md:pt-0 col-span-1 flex flex-col gap-2">
         <div className="bg-neutral-800 border-2  opacity-85 rounded-lg h-4/6 mb-2 divcircle hover:border-cyan-100 hover:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f]">
           <Subtema subnamePageHeader={"ENVIAME UN MENSAJE"} />
-          <form className="px-8 pt-6 pb-8 mb-4 rounded">
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            className="px-8 pt-6 pb-8 mb-4 rounded"
+          >
             <div className="mb-4 grid grid-cols-2">
               <div className="mb-4 md:mr-2 md:mb-0">
                 <label
                   className="block mb-2 text-sm font-bold text-gray-700 dark:text-white"
                   htmlFor="firstName"
                 >
-                  First Name
+                  Nombres
                 </label>
                 <input
                   className="w-64 px-3 py-2 text-sm leading-tight text-gray-700  border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
                   id="firstName"
                   type="text"
-                  placeholder="First Name"
+                  placeholder="Nombres"
+                  required
+                  name="user_name"
                 />
               </div>
               <div className="md:ml-2">
                 <label
                   className="block mb-2 text-sm font-bold text-gray-700 dark:text-white"
-                  htmlFor="lastName"
+                  htmlFor="Last Name"
                 >
-                  Last Name
+                  Apellidos
                 </label>
                 <input
                   className="w-full px-3 py-2 text-sm leading-tight text-gray-700  border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
                   id="lastName"
                   type="text"
-                  placeholder="Last Name"
+                  placeholder="Apellidos"
+                  name="user_last_name"
                 />
               </div>
             </div>
@@ -69,6 +125,8 @@ export function Contactme() {
                 id="email"
                 type="email"
                 placeholder="Email"
+                required
+                name="user_email"
               />
             </div>
             <div className=" mb-4 ">
@@ -81,12 +139,15 @@ export function Contactme() {
               <textarea
                 className=" rounded-md w-full h-28 px-3 py-2"
                 placeholder="Mensaje"
+                name="message"
+                required
               ></textarea>
             </div>
             <div>
               <button
                 className="flex items-center bg-transparent hover:bg-cyan-600 text-cyan-300 font-semibold hover:text-white py-2 px-4 border border-cyan-300 hover:border-transparent rounded"
-                type="button"
+                type="submit"
+                value="Send"
               >
                 Enviar Mensaje
               </button>
@@ -140,7 +201,7 @@ export function Contactme() {
               />
               <img className="h-11 w-11 " src={Vitejslogo} alt="Logo"></img>
               <img className="h-11 w-11 " src={react} alt="Logo"></img>
-              <span className="flex justify-end w-full p-4">v 2.0</span>
+              <span className="flex justify-end w-full p-4">v 2.1</span>
             </div>
           </div>
         </CardContainer>
