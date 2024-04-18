@@ -33,7 +33,7 @@ export function Presentation() {
 
         <div className="pt-1 divcircle md:px-0 h-2/5 md:pr-2 ">
           <CardContainer className="inter-var">
-            <div className=" bg-neutral-800 border-2 opacity-90 h-full rounded-lg  gap-2 hover:border-cyan-100 hover:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f]">
+            <div className=" bg-neutral-800 border-2 md:pr-1 opacity-90 h-full rounded-lg  gap-2 hover:border-cyan-100 hover:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f]">
               <Subtema subnamePageHeader={"yo"} />
 
               <div className="grid grid-cols-10 p-2 ">
@@ -92,7 +92,7 @@ export function Presentation() {
         {/*DIV ABOUT ME*/}
         <div className=" divcircle pt-3 h-3/5 md:px-0 pl-0 md:pr-2 md:pb-2 mt-1 md:mt-0">
           <CardContainer className="inter-var ">
-            <div className="bg-neutral-800 order-2 border-2 opacity-90  rounded-lg text-white  hover:border-cyan-100 hover:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f]">
+            <div className="bg-neutral-800 order-2 border-2 opacity-90 md:pr-1 rounded-lg text-white  hover:border-cyan-100 hover:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f]">
               <Subtema subnamePageHeader={"sobre mi"} />
               <br></br>
               <div className="pl-2 text-sm">

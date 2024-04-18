@@ -59,7 +59,7 @@ export function Contactme() {
   return (
     <div className="pt-2  md:grid grid-cols-2 gap-5 p-1 md:h-full pb-3">
       <CardContainer className="inter-var">
-        <div className="bg-neutral-800 border-2  md:h-full rounded-lg divcircle hover:border-cyan-100 hover:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f]">
+        <div className="bg-neutral-800 border-2  md:pr-1 md:h-full rounded-lg divcircle hover:border-cyan-100 hover:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f]">
           <Subtema subnamePageHeader={"localizacion"} />
           <div className="relative h-[620px] rounded-lg shadow-lg r dark:shadow-black/20 flex justify-center items-center p-3 ">
             <iframe
@@ -73,7 +73,7 @@ export function Contactme() {
       </CardContainer>
 
       <div className="pt-4 md:pt-0 col-span-1 flex flex-col gap-2">
-        <div className="bg-neutral-800 border-2  opacity-85 rounded-lg h-4/6 mb-2 divcircle hover:border-cyan-100 hover:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f]">
+        <div className="bg-neutral-800 border-2  opacity-85 rounded-lg h-4/6 md:pr-1 mb-2 divcircle hover:border-cyan-100 hover:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f]">
           <Subtema subnamePageHeader={"enviame un mensaje"} />
           <form
             ref={form}
@@ -156,7 +156,7 @@ export function Contactme() {
         </div>
 
         <CardContainer className="inter-var">
-          <div className=" text-white bg-neutral-800 border-2  opacity-85 rounded-lg h-2/6 divcircle hover:border-cyan-100 hover:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f]">
+          <div className=" text-white bg-neutral-800 border-2  opacity-85 md:pr-1 rounded-lg h-2/6 divcircle hover:border-cyan-100 hover:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f]">
             <Subtema subnamePageHeader={"mi portafolio"} />
 
             <p className="px-2">

@@ -11,7 +11,7 @@ export function Proyects() {
   return (
     <div className="pt-3 md:pt-2  md:grid grid-cols-2 p-1 gap-5 md:h-full pb-3 text-white ">
       <CardContainer className="inter-var">
-      <div className="bg-neutral-800 border-2  opacity-90 h-full rounded-lg divcircle hover:border-cyan-100 hover:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f]">
+      <div className="bg-neutral-800 border-2 md:pr-1 opacity-90 h-full rounded-lg divcircle hover:border-cyan-100 hover:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f]">
         <div>
           <Subtema subnamePageHeader={"proyectos"} />
         </div>
@@ -30,7 +30,7 @@ export function Proyects() {
       </div>
       </CardContainer>
       <CardContainer className="inter-var">
-      <div className=" bg-neutral-800 border-2  opacity-90 h-full rounded-lg flex flex-col divcircle hover:border-cyan-100 hover:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f] mt-4 md:mt-0">
+      <div className=" bg-neutral-800 border-2  opacity-90 md:pr-1 h-full rounded-lg flex flex-col divcircle hover:border-cyan-100 hover:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f] mt-4 md:mt-0">
         <div>
           <Subtema subnamePageHeader={"tareas"} />
         </div>
