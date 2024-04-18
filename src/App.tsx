@@ -22,15 +22,13 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 function App() {
-  
-
   const [nowpage, setnowpage] = useState("PRESENTACION");
   const isMobileOrTablet = useMediaQuery("(max-width: 768px)");
 
   useEffect(() => {
     // Notificación para dispositivos de escritorio
     if (!isMobileOrTablet) {
-      toast('👋¡Usa el panel izquierdo para moverte!😄', {
+      toast("👋¡Usa el panel izquierdo para moverte!😄", {
         position: "top-center",
         autoClose: 5500,
         hideProgressBar: false,
@@ -38,10 +36,10 @@ function App() {
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
-        theme: "dark"
-        })
-    }else{
-      toast('👋¡Pulsa en los cuadros,para ver los efectos!😄', {
+        theme: "dark",
+      });
+    } else {
+      toast("👋¡Pulsa en los cuadros,para ver los efectos!😄", {
         position: "top-center",
         autoClose: 6000,
         hideProgressBar: false,
@@ -49,11 +47,10 @@ function App() {
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
-        theme: "dark"
-        })
+        theme: "dark",
+      });
     }
   }, []);
-
 
   return (
     <div className="h-screen  w-full  flex jetbrains-mono">

@@ -33,9 +33,8 @@ export function Presentation() {
 
         <div className="pt-1 divcircle md:px-0 h-2/5 md:pr-2 ">
           <CardContainer className="inter-var">
-          
-            <div className=" bg-neutral-800 border-2  h-full rounded-lg  gap-2 hover:border-cyan-100 hover:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f]">
-              <Subtema subnamePageHeader={"HERRAMIENTAS Y LENGUAJES"} />
+            <div className=" bg-neutral-800 border-2 opacity-90 h-full rounded-lg  gap-2 hover:border-cyan-100 hover:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f]">
+              <Subtema subnamePageHeader={"yo"} />
 
               <div className="grid grid-cols-10 p-2 ">
                 <div className="col-span-6 p-3 text-white">
@@ -50,7 +49,7 @@ export function Presentation() {
                     <h1 className="text-auto">
                       Estudiante de{" "}
                       <span className="font-bold text-yellow-400">
-                        Ingenieria en sistemas e informatica
+                        Ingenieria en Informatica y Sistemas
                       </span>
                     </h1>
                     <h1 className="font-bold text-blue-500">
@@ -87,7 +86,6 @@ export function Presentation() {
                 </div>
               </div>
             </div>
-            
           </CardContainer>
         </div>
 
@@ -95,7 +93,7 @@ export function Presentation() {
         <div className=" divcircle pt-3 h-3/5 md:px-0 pl-0 md:pr-2 md:pb-2 mt-1 md:mt-0">
           <CardContainer className="inter-var ">
             <div className="bg-neutral-800 order-2 border-2 opacity-90  rounded-lg text-white  hover:border-cyan-100 hover:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f]">
-              <Subtema subnamePageHeader={"SOBRE MI"} />
+              <Subtema subnamePageHeader={"sobre mi"} />
               <br></br>
               <div className="pl-2 text-sm">
                 <p>
@@ -157,8 +155,8 @@ export function Presentation() {
         {/*DIV JSON*/}
         <div className="pt-4 h-3/6 md:p-2 md:px-0">
           <CardContainer className="inter-var">
-            <div className="bg-neutral-800 border-2  opacity-90 h-full rounded-lg  hover:border-cyan-100 hover:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f]">
-              <Subtema subnamePageHeader={"DETALLES"} />
+            <div className="bg-neutral-800 border-2  opacity-80 h-full rounded-lg  hover:border-cyan-100 hover:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f]">
+              <Subtema subnamePageHeader={"detalles"} />
               <div className=" px-3 flex-1">
                 <table className="text-white rounded-md font-sans">
                   <thead>
@@ -178,7 +176,7 @@ export function Presentation() {
                         <span className="text-lime-400 text-lg ">
                           &nbsp;&nbsp;&nbsp;&nbsp;"fullname":
                         </span>{" "}
-                        <span className="text-violet-400 text-lg">
+                        <span className="text-cyan-400 text-lg">
                           "Frank Aldair Chaparro Perca",
                         </span>
                       </td>
@@ -198,7 +196,7 @@ export function Presentation() {
                         <span className="text-lime-400 text-lg">
                           &nbsp;&nbsp;&nbsp;&nbsp;"country":
                         </span>{" "}
-                        <span className="text-violet-400 text-lg">"Peru",</span>
+                        <span className="text-cyan-400 text-lg">"Peru",</span>
                       </td>
                     </tr>
                     <tr>
@@ -207,7 +205,7 @@ export function Presentation() {
                         <span className="text-lime-400 text-lg">
                           &nbsp;&nbsp;&nbsp;&nbsp;"college":
                         </span>{" "}
-                        <span className="text-violet-400 text-lg">
+                        <span className="text-cyan-400 text-lg">
                           "Universidad Nacional Jorge Basadre Grohmann",
                         </span>
                       </td>
@@ -218,7 +216,7 @@ export function Presentation() {
                         <span className="text-lime-400 text-lg">
                           &nbsp;&nbsp;&nbsp;&nbsp;"career":
                         </span>{" "}
-                        <span className="text-violet-400 text-lg">
+                        <span className="text-cyan-400 text-lg">
                           "Ingeniería de Sistemas",
                         </span>
                       </td>
@@ -229,7 +227,7 @@ export function Presentation() {
                         <span className="text-lime-400 text-lg">
                           &nbsp;&nbsp;&nbsp;&nbsp;"cycle":
                         </span>{" "}
-                        <span className="text-violet-400 text-lg">"7mo.",</span>
+                        <span className="text-cyan-400 text-lg">"7mo.",</span>
                       </td>
                     </tr>
                     <tr>
@@ -238,7 +236,7 @@ export function Presentation() {
                         <span className="text-lime-400 text-lg">
                           &nbsp;&nbsp;&nbsp;&nbsp;"other_languages":
                         </span>{" "}
-                        <span className="text-violet-400 text-lg">
+                        <span className="text-cyan-400 text-lg">
                           "Ingles(intermedio)"
                         </span>
                       </td>
@@ -260,8 +258,8 @@ export function Presentation() {
         {/*DIV TOOLS*/}
         <div className="pt-4 h-3/6 md:p-2 divcircle md:px-0">
           <CardContainer className="inter-var">
-            <div className=" border-2  bg-neutral-800 opacity-95 h-full rounded-lg gap-2  hover:border-cyan-100 hover:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f]">
-              <Subtema subnamePageHeader={"HERRAMIENTAS Y LENGUAJES"} />
+            <div className="bg-neutral-800 border-2   opacity-80 h-full rounded-lg gap-2  hover:border-cyan-100 hover:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f]">
+              <Subtema subnamePageHeader={"herramientas y lenguajes"} />
               <div className=" p-2 flex-1 overflow-auto">
                 <div className="  grid grid-cols-6 p-2 gap-2">
                   <div className=" flex items-center justify-center rounded-md h-20 p-2 hover:scale-110">
@@ -284,7 +282,7 @@ export function Presentation() {
                   </div>
                   <div className=" flex items-center justify-center rounded-md h-20 p-2 hover:scale-110">
                     <img
-                      className="h-18 w-16 "
+                     className="h-18 w-16 "
                       src={servidorsql}
                       alt="Logo"
                     ></img>
